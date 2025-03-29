@@ -1,0 +1,126 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Update Css Variables Using Js</title>
+  <!-- Custom Css -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <section class="img__section">
+
+        <div class="img__wrapper">
+          <img src="CR7.webp" alt="cr7" id="CR7" />
+        </div>
+
+        <div class="file__wrapper">
+          <label for="input-file">Update image</label>
+          <input type="file" accept="image/jpg, image/png, image/jpeg" id="input-file">
+        </div>
+
+      </section>
+
+    </header>
+    <main>
+
+      <article class="settings">
+        <p>Settings</p>
+      </article>
+
+
+      <div class="wrapper">
+
+        <!-- Spacing -->
+        <article class="contents">
+          <p>Spacing</p>
+          <div class="content">
+            <div class="value">0</div>
+            <div class="input-range__wrapper">
+              <span id="span" class="indicatore">01</span>
+              <input type="range" id="spacing" min="1" max="20" value="0">
+            </div>
+            <div class="value">20</div>
+          </div>
+        </article>
+        <!-- Blur -->
+        <article class="contents">
+          <p>Blur</p>
+          <div class="content">
+            <div class="value">0</div>
+            <div class="input-range__wrapper">
+              <span id="span" class="indicatore">01</span>
+              <input type="range" id="blur" min="0" max="15" value="0">
+            </div>
+            <div class="value">15</div>
+          </div>
+        </article>
+        <!-- BorderRadius -->
+        <article class="contents">
+          <p>BorderRounded</p>
+          <div class="content">
+            <div class="value">0</div>
+            <div class="input-range__wrapper">
+              <span id="span" class="indicatore">01</span>
+              <input type="range" value="0" min="1" max="50" id="border">
+            </div>
+            <div class="value">50%</div>
+          </div>
+        </article>
+        <!-- bgColor -->
+        <article class="contents">
+          <p>bgColor</p>
+          <div class="content">
+            <div class="input-range__wrapper">
+              <input type="color" id="base" value="#FF0000">
+            </div>
+            <div class="value" id="bgColorName">#ff0000</div>
+          </div>
+        </article>
+      </div>
+
+
+    </main>
+  </div>
+  <!-- <div class="controls">
+      <section class="item">
+
+        <div class="items">
+          <label>Spacing </label>
+          <input type="range" id="spacing" min="1" max="30" value="0" />
+        </div>
+
+        <div class="items">
+          <label>Blur </label>
+          <input type="range" id="blur" min="0" max="25" value="0" />
+        </div>
+
+      </section>
+
+      <section class="item">
+        <div class="items">
+          <label>borderRadius </label>
+          <input type="range" value="0" id="border" />
+        </div>
+
+        <div class="items">
+          <label>bgColor </label>
+          <input type="color" id="base" value="#FF0000" />
+        </div>
+      </section>
+    </div> -->
+  <!-- </div> -->
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
