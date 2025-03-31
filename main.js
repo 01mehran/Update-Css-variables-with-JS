@@ -6,8 +6,6 @@ const values = document.querySelectorAll(".indicatore");
 const inputFile = document.querySelector("#input-file");
 const bgColorName = document.querySelector("#bgColorName");
 
-
-
 // Set dynamiclly styles;
 const updateStyle = function () {
   const ID = this.id;
