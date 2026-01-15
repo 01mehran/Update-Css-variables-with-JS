@@ -1,6 +1,6 @@
 # Image Editor App;
 
-![output](./output.png)
+![output](./images/output.png)
 
 
 ## Description :
