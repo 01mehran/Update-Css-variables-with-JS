@@ -46,7 +46,7 @@ header {
   text-align: center;
 }
 .img__section .file__wrapper label {
-  box-shadow: 0 0 5px var(--light-gray);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
   color: var(--light-gray);
   padding: 10px 25px;
   border-radius: 0.2rem;
@@ -55,7 +55,7 @@ header {
   transition: box-shadow 0.3s ease;
 }
 .img__section .file__wrapper label:hover {
-  box-shadow: 0 0 8px var(--light-gray);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 .img__section .file__wrapper input {
   display: none;
@@ -85,6 +85,7 @@ header {
   align-items: center;
   justify-content: center;
   gap: 30px;
+  padding-bottom: 10px;
 }
 .contents {
   width: fit-content;
@@ -99,13 +100,14 @@ header {
 }
 
 .content {
-  box-shadow: 0 0 5px var(--light-gray);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
   padding: 10px;
   width: 300px;
   display: flex;
   align-items: center;
   border-radius: 5px;
   gap: 8px;
+  height: 50px;
 }
 
 .input-range__wrapper {
