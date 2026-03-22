@@ -1,4 +1,4 @@
-// Selecting Elements;
+// selecting elements;
 import {
   inputs,
   img,
@@ -7,16 +7,15 @@ import {
   bgColorName,
 } from "./elements.js";
 
-// Set dynamiclly styles;
-const updateStyle = function () {
-  const ID = this.id;
-  const suffix = ID === "base" ? "" : ID === "border" ? "%" : "px";
+// components;
+import { handleUpdateStyles } from "./updateStyles.js";
 
-  document.documentElement.style.setProperty(`--${ID}`, this.value + suffix);
-};
+// listeners;
+inputs.forEach((input) => input.addEventListener("change", handleUpdateStyles));
 
-inputs.forEach((input) => input.addEventListener("change", updateStyle));
-inputs.forEach((input) => input.addEventListener("mousemove", updateStyle));
+inputs.forEach((input) =>
+  input.addEventListener("mousemove", handleUpdateStyles),
+);
 
 // Show the value of range;
 inputs.forEach((input, i) => {
