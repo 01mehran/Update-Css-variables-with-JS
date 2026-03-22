@@ -1,13 +1,14 @@
 // Selecting Elements;
-const inputs = document.querySelectorAll(".input-range__wrapper input");
-const img = document.querySelector("#cr7");
-const indicatores = document.querySelectorAll(".indicatore");
-
-const inputFile = document.querySelector("#input-file");
-const bgColorName = document.querySelector("#bgColorName");
+import {
+  inputs,
+  img,
+  indicatores,
+  inputFile,
+  bgColorName,
+} from "./elements.js";
 
 // Set dynamiclly styles;
-const updateStyle = function (e) {
+const updateStyle = function () {
   const ID = this.id;
   const suffix = ID === "base" ? "" : ID === "border" ? "%" : "px";
 
