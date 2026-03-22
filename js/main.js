@@ -1,9 +1,10 @@
 // selecting elements;
-import { inputs, img, indicatores, inputFile } from "./elements.js";
+import { inputs, img, inputFile } from "./elements.js";
 
 // components;
 import { handleUpdateStyles } from "./updateStyles.js";
 import { handleIndicatoresTooltip } from "./indicatoreTooltip.js";
+import { handleOnblureRangeInput } from "./onBlureRangeInput.js";
 
 // listeners;
 inputs.forEach((input) => input.addEventListener("change", handleUpdateStyles));
@@ -15,14 +16,8 @@ inputs.forEach((input) =>
 // show the value of range;
 inputs.forEach((input, i) => handleIndicatoresTooltip(input, i));
 
-// onBlur;
-inputs.forEach((input, i) => {
-  input.addEventListener("blur", () => {
-    if (input.type === "range") {
-      indicatores[i].classList.remove("show");
-    }
-  });
-});
+// onBlur range inputes;
+inputs.forEach((input, i) => handleOnblureRangeInput(input, i));
 
 // Uplaod Img;
 inputFile.addEventListener("change", () => {
